@@ -671,6 +671,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .howto__tabs {
   display: flex;
   gap: 0;
+  justify-content: center;
   margin-bottom: 56px;
   border-bottom: 0.5px solid var(--brown);
 }
