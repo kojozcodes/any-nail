@@ -565,7 +565,95 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ============================================================
-   13. CONCEPT SECTION
+   13. CATEGORY SECTION
+   ============================================================ */
+.category-section {
+  width: 100%;
+  background: #D4D2C7;
+  padding: 80px 50px 100px;
+}
+
+.category-section__inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.category-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.category-card {
+  position: relative;
+  flex: 1;
+  height: 200px;
+  background: #ffffff;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.category-card--active {
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+  border-color: var(--brown);
+}
+
+.category-card__info {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.category-card__en {
+  font-family: var(--font-en);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--brown);
+}
+
+.category-card__jp {
+  font-family: var(--font-jp);
+  font-weight: 300;
+  font-size: 13px;
+  color: #000;
+}
+
+.category-card__arrow {
+  position: absolute;
+  right: 11px;
+  top: 19px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 0.5px solid #766C60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-card__arrow--filled {
+  background: var(--brown);
+  border: none;
+}
+
+/* ============================================================
+   14. CONCEPT SECTION
    ============================================================ */
 .concept {
   background: var(--cream);
