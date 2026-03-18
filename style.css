@@ -380,6 +380,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .occasion-nails__tags {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  border-bottom: 0.5px solid var(--border);
 }
 
 .occasion-tag {
@@ -390,7 +391,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   letter-spacing: 0.06em;
   text-align: center;
   padding-bottom: 12px;
-  border-bottom: 0.5px solid var(--border);
 }
 
 /* ============================================================
