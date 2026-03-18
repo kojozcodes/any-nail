@@ -922,7 +922,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .information__list {
-  max-width: 1000px;
   border-top: 0.5px solid var(--brown);
 }
 
