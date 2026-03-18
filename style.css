@@ -1065,38 +1065,30 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 56px;
 }
 
-.site-footer__shop-name {
+.site-footer__logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+
+.site-footer__logo-en {
   font-family: var(--font-en);
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 0.14em;
-  color: #000000;
-  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  color: var(--brown);
 }
 
-.site-footer__shop-info {
-  font-family: var(--font-jp);
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 2.2;
-  letter-spacing: 0.06em;
-  color: #000000;
-}
-
-.site-footer__shop-info a {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  color: #000000;
-}
-
-.site-footer__follow {
+.site-footer__logo-tagline {
   font-family: var(--font-en);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.2em;
+  color: var(--brown);
   margin-top: 8px;
-  display: block;
-  color: #000000;
 }
 
 .site-footer__socials {
