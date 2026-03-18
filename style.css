@@ -507,7 +507,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .campaign-card__text {
   position: absolute;
-  bottom: 52px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 24px;
   color: var(--white);
 }
