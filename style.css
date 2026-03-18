@@ -1397,7 +1397,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Product Main Layout */
 .product-main {
-  padding: 64px 0 96px;
+  padding: 40px 0 96px;
+}
+
+.product-main__breadcrumb {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--side-pad) 24px;
 }
 
 .product-main__inner {
