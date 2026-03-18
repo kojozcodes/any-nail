@@ -1640,9 +1640,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* Size Chart */
+.accordion--sm {
+  border-top: none;
+}
+
 .accordion--sm .accordion__label {
   font-size: 16px;
   color: var(--brown);
+  border-bottom: 1px solid var(--border);
 }
 
 .accordion--sm .accordion__item {
