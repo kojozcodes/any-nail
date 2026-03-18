@@ -751,7 +751,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ============================================================ */
 .video-section {
   width: 100%;
+  max-width: 1400px;
   height: 400px;
+  margin: 0 auto;
   background: #b8b2ac;
   display: flex;
   align-items: center;
