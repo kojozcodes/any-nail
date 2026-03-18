@@ -912,7 +912,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ============================================================ */
 .information {
   padding: 80px 0;
-  background: var(--cream);
+  background: #ffffff;
 }
 
 .information__inner {
