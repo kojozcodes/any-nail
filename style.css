@@ -1300,15 +1300,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 300;
   letter-spacing: 0.08em;
   color: var(--brown);
-  text-align: center;
-  margin: 32px 0;
+  text-align: left;
+  margin: 32px 0 16px;
 }
 
 .product-detail-images__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
-  margin-top: 16px;
+  margin-top: 32px;
 }
 
 .product-detail-images__grid-item {
@@ -1323,8 +1323,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   line-height: 2;
   color: var(--black);
   letter-spacing: 0.04em;
-  margin-top: 32px;
+  margin-bottom: 40px;
 }
+
 
 /* Product Main Layout */
 .product-main {
