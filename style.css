@@ -378,9 +378,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .occasion-nails__tags {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .occasion-tag {
@@ -389,6 +388,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 300;
   color: var(--black);
   letter-spacing: 0.06em;
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 0.5px solid var(--border);
 }
 
 /* ============================================================
@@ -1288,7 +1290,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 300;
   letter-spacing: 0.08em;
   color: var(--brown);
-  text-align: left;
+  text-align: center;
   margin: 32px 0 16px;
 }
 
@@ -1311,6 +1313,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   line-height: 2;
   color: var(--black);
   letter-spacing: 0.04em;
+  text-align: center;
   margin-bottom: 40px;
 }
 
