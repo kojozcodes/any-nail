@@ -22,6 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
     mega.addEventListener('mouseleave', close);
   });
 
+  // ── Hamburger menu ───────────────────────────────────────────
+  const hamburger = document.querySelector('.nav-hamburger');
+  const mobileNav = document.querySelector('.site-header__nav');
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('is-open');
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+      hamburger.classList.toggle('is-open', isOpen);
+    });
+  }
+
   // ── Parallax – ranking images ────────────────────────────────
   const parallaxItems = document.querySelectorAll('.ranking-item__image-inner');
   if (parallaxItems.length) {

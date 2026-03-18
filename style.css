@@ -1979,6 +1979,350 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+/* ── Hamburger ─────────────────────────────────────────────── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--black);
+  transition: transform 0.25s, opacity 0.25s;
+}
+
+.nav-hamburger.is-open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-hamburger.is-open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.is-open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ── Tablet (≤ 1024px) ─────────────────────────────────────── */
+@media (max-width: 1024px) {
+  :root { --side-pad: 32px; }
+
+  .site-header__inner {
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .ranking__grid {
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ranking-item {
+    flex: 0 0 200px;
+  }
+
+  .concept__images {
+    flex: 0 0 480px;
+  }
+
+  .concept__sub-images {
+    gap: 40px;
+    padding-left: 0;
+  }
+
+  .concept__sub-image--small {
+    flex: 0 0 180px;
+    height: 180px;
+  }
+
+  .concept__sub-image--large {
+    flex: 0 0 400px;
+    height: 280px;
+  }
+
+  .shop-info {
+    gap: 32px;
+  }
+
+  .shop-info__image {
+    width: 480px;
+    height: 340px;
+  }
+
+  .shop-info__content {
+    width: auto;
+    flex: 1;
+  }
+}
+
+/* ── Mobile (≤ 768px) ──────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root { --side-pad: 20px; }
+
+  /* Header */
+  .site-header__inner {
+    grid-template-columns: 1fr auto;
+    position: relative;
+  }
+
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .site-header__icons {
+    display: none;
+  }
+
+  .site-header__nav {
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--white);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 0 var(--side-pad);
+    overflow-y: auto;
+    z-index: 200;
+    border-top: 1px solid var(--border);
+  }
+
+  .site-header__nav.is-open {
+    display: flex;
+  }
+
+  .site-header__nav > a,
+  .nav-item__link {
+    display: block;
+    padding: 16px 0;
+    font-size: 16px;
+    border-bottom: 0.5px solid var(--border);
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    align-self: auto;
+  }
+
+  .mega-menu {
+    display: none !important;
+  }
+
+  /* Hero */
+  .hero {
+    height: 420px;
+  }
+
+  .hero__text {
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 20px 24px;
+  }
+
+  .hero__en { font-size: 22px; }
+
+  .hero__indicators.swiper-pagination {
+    left: 20px;
+  }
+
+  /* Feature */
+  .feature__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .feature__item {
+    border-left: none;
+    padding: 0 16px;
+  }
+
+  .feature__item:nth-child(odd) {
+    border-right: 1px solid var(--brown);
+    padding-right: 16px;
+  }
+
+  /* Campaign */
+  .campaign__grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Products grid */
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 12px;
+  }
+
+  /* Ranking */
+  .ranking__grid {
+    gap: 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+  }
+
+  .ranking-item {
+    flex: 0 0 160px;
+  }
+
+  /* Category section */
+  .category-section {
+    padding: 60px 20px 80px;
+  }
+
+  .category-card {
+    height: 140px;
+  }
+
+  /* Concept */
+  .concept__main-row {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .concept__images {
+    flex: none;
+    width: 100%;
+  }
+
+  .concept__sub-images {
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 0;
+    align-items: stretch;
+  }
+
+  .concept__sub-image--small,
+  .concept__sub-image--large {
+    flex: none;
+    width: 100%;
+    height: 240px;
+    margin-top: 0;
+  }
+
+  .concept__big-heading {
+    font-size: 28px;
+  }
+
+  /* How-to */
+  .howto__steps {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  /* Gallery */
+  .gallery__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Shop info */
+  .shop-info {
+    flex-direction: column;
+    padding: 0 var(--side-pad);
+  }
+
+  .shop-info__image {
+    width: 100%;
+    height: 260px;
+  }
+
+  .shop-info__content {
+    width: 100%;
+  }
+
+  /* Product main */
+  .product-main__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Product detail images */
+  .product-detail-images__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Occasion tags */
+  .occasion-nails__tags {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 16px;
+  }
+
+  /* Feature on product page */
+  .feature__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* How-to steps (fewer cols on small screens) */
+  .howto__steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer */
+  .site-footer__top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .site-footer__nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 16px;
+  }
+
+  /* Section headings */
+  .section-heading__en {
+    font-size: 18px;
+  }
+
+  /* Product spec */
+  .product-spec__row {
+    gap: 24px;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    flex-wrap: wrap;
+  }
+}
+
+/* ── Small mobile (≤ 480px) ────────────────────────────────── */
+@media (max-width: 480px) {
+  .hero {
+    height: 320px;
+  }
+
+  .hero__text {
+    width: calc(100% - 32px);
+    padding: 16px 20px;
+  }
+
+  .howto__steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+
+  .site-footer__nav-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-share {
+    flex-wrap: wrap;
+  }
+}
+
+/* ============================================================
    UTILITY
    ============================================================ */
 .visually-hidden {
