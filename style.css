@@ -216,16 +216,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   text-align: center;
 }
 
-.nav-item__link--has-chevron::after {
-  content: '';
+.nav-item__chevron {
   display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-right: 1px solid currentColor;
-  border-bottom: 1px solid currentColor;
-  transform: translateY(-2px) rotate(45deg);
-  margin-left: 6px;
   vertical-align: middle;
+  margin-left: 4px;
+  margin-top: -2px;
+  transition: transform 0.2s ease;
+  color: var(--black);
+}
+
+.nav-item.is-open .nav-item__chevron {
+  transform: rotate(180deg);
 }
 
 /* ============================================================
