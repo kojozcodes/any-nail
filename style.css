@@ -864,7 +864,85 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ============================================================
-   17. VIEWED ITEMS
+   17. SHOP INFO
+   ============================================================ */
+.shop-info {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.shop-info__image {
+  width: 700px;
+  height: 495px;
+  flex-shrink: 0;
+  background: var(--placeholder);
+}
+
+.shop-info__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 548px;
+}
+
+.shop-info__name {
+  font-family: var(--font-jp);
+  font-weight: 300;
+  font-size: 20px;
+  color: #000;
+}
+
+.shop-info__details {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  border-top: 0.5px solid var(--brown);
+  padding-top: 39px;
+}
+
+.shop-info__row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.shop-info__label-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 117px;
+}
+
+.shop-info__label {
+  font-family: var(--font-en);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+.shop-info__map-link {
+  font-family: var(--font-en);
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--brown);
+  text-decoration: none;
+}
+
+.shop-info__value {
+  font-family: var(--font-jp);
+  font-weight: 300;
+  font-size: 13px;
+  color: #000;
+  padding-top: 3px;
+}
+
+/* ============================================================
+   18. VIEWED ITEMS
    ============================================================ */
 .viewed-items {
   padding: 80px 0;
