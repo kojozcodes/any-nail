@@ -1271,7 +1271,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin: 0 auto;
   padding: 0 var(--side-pad);
   display: grid;
-  grid-template-columns: 700px 1fr;
+  grid-template-columns: 500px 1fr;
   gap: 64px;
 }
 
@@ -1284,7 +1284,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .product-images__main {
   width: 100%;
-  height: 700px;
+  aspect-ratio: 1;
   background: var(--placeholder);
 }
 
@@ -1469,7 +1469,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* Add to Cart */
 .btn-add-to-cart {
   box-sizing: border-box;
-  width: 380px;
+  width: 100%;
   height: 50px;
   background: #000000;
   color: var(--white);
@@ -1489,7 +1489,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 380px;
+  width: 100%;
   height: 50px;
   border: 1px solid var(--brown);
   background: rgba(255, 255, 255, 0.2);
