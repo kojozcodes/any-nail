@@ -1,5 +1,5 @@
 /* ============================================================
-   ANY NAIL — style.css
+   ANY NAIL - style.css
    ============================================================ */
 
 /* ---- Google Fonts ---- */
@@ -1154,7 +1154,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ============================================================
-   PRODUCT PAGE — SPECIFIC STYLES
+   PRODUCT PAGE - SPECIFIC STYLES
    ============================================================ */
 
 /* Product Category Hero */
@@ -1428,6 +1428,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .count-selector {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
 }
 
@@ -1570,7 +1571,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .accordion__input:checked ~ .accordion__label .accordion__icon::before {
-  content: '−';
+  content: '-';
 }
 
 .accordion__icon::before {
