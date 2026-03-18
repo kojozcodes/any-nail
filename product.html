@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>商品名 | Any Nail — ネイルチップブランド</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       ANNOUNCEMENT BAR
+  ============================================================ -->
+  <div class="announcement-bar">
+    <div class="announcement-bar__inner">
+      <span class="announcement-bar__item">00,000円以上お買い上げで送料無料</span>
+      <span class="announcement-bar__item">00,000円以上お買い上げで送料無料</span>
+      <span class="announcement-bar__item">00,000円以上お買い上げで送料無料</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+
+      <a href="index.html" class="site-header__logo">
+        <span class="site-header__logo-en">Any nail</span>
+        <span class="site-header__logo-jp">ネイルチップブランド</span>
+      </a>
+
+      <nav class="site-header__nav">
+        <a href="#">Category</a>
+        <a href="#">New Arrival</a>
+        <a href="#">Collection</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="site-header__icons">
+        <a href="#" class="site-header__icon" aria-label="検索">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16.5" y1="16.5" x2="22" y2="22"/>
+          </svg>
+        </a>
+        <a href="#" class="site-header__icon" aria-label="アカウント">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+        </a>
+        <a href="#" class="site-header__icon" aria-label="カート">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         PRODUCT HERO
+    ============================================================ -->
+    <section class="product-hero" aria-label="商品カテゴリー">
+      <span class="product-hero__category">ハンドネイルチップ</span>
+      <h1 class="product-hero__title">Hand nail chip</h1>
+      <div class="product-hero__chips" role="img" aria-label="商品イメージ"></div>
+      <div class="product-hero__divider"></div>
+    </section>
+
+    <!-- ============================================================
+         PRODUCT MAIN (Image + Info)
+    ============================================================ -->
+    <section class="product-main">
+      <div class="product-main__inner">
+
+        <!-- Left: Product Images -->
+        <div class="product-images">
+          <div class="product-images__main" role="img" aria-label="商品メイン画像"></div>
+          <div class="product-images__thumbs">
+            <div class="product-images__thumb product-images__thumb--active"></div>
+            <div class="product-images__thumb"></div>
+            <div class="product-images__thumb"></div>
+            <div class="product-images__thumb"></div>
+          </div>
+        </div>
+
+        <!-- Right: Product Info -->
+        <div class="product-info">
+
+          <!-- Breadcrumb -->
+          <nav class="breadcrumb" aria-label="パンくずリスト">
+            <a href="index.html">ホーム</a>
+            <span class="breadcrumb__sep">›</span>
+            <a href="#">ハンドネイルチップ</a>
+            <span class="breadcrumb__sep">›</span>
+            <span>商品名が入ります</span>
+          </nav>
+
+          <!-- Name -->
+          <h2 class="product-info__name">商品名が入ります。商品名が入ります。</h2>
+
+          <!-- Price -->
+          <p class="product-info__price">¥0,000</p>
+
+          <!-- Description -->
+          <p class="product-info__desc">商品説明文が入ります。商品説明文が入ります。商品説明文が入ります。商品説明文が入ります。商品説明文が入ります。商品説明文が入ります。商品説明文が入ります。商品説明文が入ります。</p>
+
+          <hr class="product-info__divider" />
+
+          <!-- Occasion -->
+          <div class="product-occasion">
+            <p class="product-occasion__label">Occasion Nail</p>
+            <p class="product-occasion__text">フォーマルに映える、洗練された指先。</p>
+          </div>
+
+          <hr class="product-info__divider" />
+
+          <!-- Size Selector -->
+          <div class="size-selector">
+            <p class="size-selector__label">Size</p>
+            <div class="size-selector__buttons">
+              <button class="size-btn size-btn--active">S</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">L</button>
+            </div>
+          </div>
+
+          <!-- Count Selector -->
+          <div class="count-selector">
+            <p class="count-selector__label">Count</p>
+            <div class="count-selector__control">
+              <button class="count-btn" aria-label="減らす">−</button>
+              <span class="count-display">1</span>
+              <button class="count-btn" aria-label="増やす">＋</button>
+            </div>
+          </div>
+
+          <!-- Add to Cart -->
+          <button class="btn-add-to-cart">カートに追加</button>
+
+          <!-- Size Detail Accordion -->
+          <div class="accordion">
+            <div class="accordion__item">
+              <input type="checkbox" id="acc-size" class="accordion__input" />
+              <label class="accordion__label" for="acc-size">
+                サイズ詳細
+                <span class="accordion__icon"></span>
+              </label>
+              <div class="accordion__content">
+                <div class="accordion__body">
+                  <table class="size-chart">
+                    <thead>
+                      <tr>
+                        <th>サイズ</th>
+                        <th>親指</th>
+                        <th>人差し指</th>
+                        <th>中指</th>
+                        <th>薬指</th>
+                        <th>小指</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>S</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td></tr>
+                      <tr><td>M</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td></tr>
+                      <tr><td>L</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inquiry -->
+          <a href="#" class="product-inquiry">この商品について問い合わせる</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRODUCT DETAIL IMAGES
+    ============================================================ -->
+    <section class="product-detail-images">
+      <div class="product-detail-images__main" role="img" aria-label="商品詳細画像"></div>
+      <p class="product-detail-images__catchphrase">キャッチコピーが入ります。</p>
+      <div class="product-detail-images__grid">
+        <div class="product-detail-images__grid-item" role="img"></div>
+        <div class="product-detail-images__grid-item" role="img"></div>
+        <div class="product-detail-images__grid-item" role="img"></div>
+      </div>
+      <p class="product-detail-images__desc">商品説明文やデザインに関する説明文が入ります。商品説明文やデザインに関する説明文が入ります。商品説明文やデザインに関する説明文が入ります。商品説明文やデザインに関する説明文が入ります。</p>
+    </section>
+
+    <!-- ============================================================
+         FEATURE
+    ============================================================ -->
+    <section class="feature">
+      <div class="feature__inner">
+        <div class="section-heading feature__heading">
+          <span class="section-heading__en">Feature</span>
+          <span class="section-heading__jp">Any nailが選ばれる理由</span>
+        </div>
+        <div class="feature__grid">
+
+          <div class="feature__item">
+            <div class="feature__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 8l-6 10h5v6h2V18h5L14 8z"/>
+                <path d="M34 8l6 10h-5v6h-2V18h-5l6-10z"/>
+                <path d="M10 32l-4 8h8v-3h12v3h8l-4-8"/>
+                <line x1="14" y1="18" x2="14" y2="37"/>
+                <line x1="34" y1="18" x2="34" y2="37"/>
+              </svg>
+            </div>
+            <p class="feature__sub">使い捨てないネイルチップ</p>
+            <p class="feature__main">繰り返し使える</p>
+          </div>
+
+          <div class="feature__item">
+            <div class="feature__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 36 Q24 20 36 36"/>
+                <path d="M18 28 Q24 16 30 28"/>
+                <circle cx="24" cy="14" r="3"/>
+              </svg>
+            </div>
+            <p class="feature__sub">形状記憶素材による</p>
+            <p class="feature__main">究極のフィット感</p>
+          </div>
+
+          <div class="feature__item">
+            <div class="feature__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="10" y="12" width="28" height="28" rx="2"/>
+                <line x1="10" y1="20" x2="38" y2="20"/>
+                <line x1="18" y1="8" x2="18" y2="16"/>
+                <line x1="30" y1="8" x2="30" y2="16"/>
+                <path d="M16 28l5 5 11-10"/>
+              </svg>
+            </div>
+            <p class="feature__sub">高い密着力で外れにくい</p>
+            <p class="feature__main">約3週間キープ</p>
+          </div>
+
+          <div class="feature__item">
+            <div class="feature__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 10 L26.5 18H35L28.3 23.1 30.8 31 24 26 17.2 31 19.7 23.1 13 18H21.5Z"/>
+                <path d="M19 36 Q24 40 29 36"/>
+              </svg>
+            </div>
+            <p class="feature__sub">指先を美しく見せる</p>
+            <p class="feature__main">ネイリストデザイン</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CAMPAIGN
+    ============================================================ -->
+    <section class="campaign">
+      <div class="campaign__inner">
+        <div class="campaign__grid">
+
+          <a href="#" class="campaign-card">
+            <div class="campaign-card__text">
+              <span class="campaign-card__en">Campaign</span>
+            </div>
+            <div class="campaign-card__bar">
+              <span class="campaign-card__bar-text">新規会員登録で0,000ポイントプレゼント</span>
+            </div>
+          </a>
+
+          <a href="#" class="campaign-card">
+            <div class="campaign-card__text">
+              <span class="campaign-card__en">Spring Collection</span>
+            </div>
+          </a>
+
+          <a href="#" class="campaign-card">
+            <div class="campaign-card__text">
+              <span class="campaign-card__en">Order Made</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRODUCT DETAIL (Accordion)
+    ============================================================ -->
+    <section class="product-detail">
+      <div class="product-detail__inner">
+
+        <div class="section-heading">
+          <span class="section-heading__en">Product Detail</span>
+          <span class="section-heading__jp">商品詳細</span>
+        </div>
+
+        <div class="accordion">
+
+          <div class="accordion__item">
+            <input type="checkbox" id="acc-detail-size" class="accordion__input" />
+            <label class="accordion__label" for="acc-detail-size">
+              サイズ
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__body">
+                <p>-S：親指：00mm / 人差し指：00mm / 中指：00mm / 薬指：00mm / 小指：00mm</p>
+                <p>-M：親指：00mm / 人差し指：00mm / 中指：00mm / 薬指：00mm / 小指：00mm</p>
+                <p>-L：親指：00mm / 人差し指：00mm / 中指：00mm / 薬指：00mm / 小指：00mm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <input type="checkbox" id="acc-detail-set" class="accordion__input" />
+            <label class="accordion__label" for="acc-detail-set">
+              セット内容
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__body">
+                <p>-ネイルチップ　10枚</p>
+                <p>-専用グルー／粘着シール</p>
+                <p>-付属品（ファイル・ウッドスティック等）</p>
+                <p>-取扱説明書</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <input type="checkbox" id="acc-detail-notes" class="accordion__input" />
+            <label class="accordion__label" for="acc-detail-notes">
+              注意事項
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__body">
+                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HOW TO
+    ============================================================ -->
+    <section class="howto">
+      <div class="howto__inner">
+
+        <div class="section-heading">
+          <span class="section-heading__en">How to</span>
+          <span class="section-heading__jp">ネイルチップの付け方・外し方をご紹介</span>
+        </div>
+
+        <input type="radio" name="howto-tab-p" id="tab-tsuke-p" class="howto__tab-input" checked />
+        <input type="radio" name="howto-tab-p" id="tab-hazushi-p" class="howto__tab-input" />
+
+        <div class="howto__tabs">
+          <label for="tab-tsuke-p" class="howto__tab-label">付け方</label>
+          <label for="tab-hazushi-p" class="howto__tab-label">外し方</label>
+        </div>
+
+        <div class="howto__steps">
+
+          <div class="howto__step">
+            <span class="howto__step-num">01</span>
+            <div class="howto__step-image"></div>
+            <p class="howto__step-title">爪の長さを整える</p>
+            <p class="howto__step-text">チップに合わせて、爪の長さを揃えます。見た目が美しくなり、密着力も高まります。</p>
+          </div>
+
+          <div class="howto__step">
+            <span class="howto__step-num">02</span>
+            <div class="howto__step-image"></div>
+            <p class="howto__step-title">チップを温め、爪のカーブに合わせて曲げる</p>
+            <p class="howto__step-text">ドライヤーで約60°Cまで温めます。冷めないうちに爪のカーブ合わせチップを曲げます。冷めると形状記憶します。</p>
+          </div>
+
+          <div class="howto__step">
+            <span class="howto__step-num">03</span>
+            <div class="howto__step-image"></div>
+            <p class="howto__step-title">油分を拭き取る</p>
+            <p class="howto__step-text">アルコールパッドを使用して、爪とチップの油分を拭き取ります。</p>
+          </div>
+
+          <div class="howto__step">
+            <span class="howto__step-num">04</span>
+            <div class="howto__step-image"></div>
+            <p class="howto__step-title">チップと爪にグルーを塗布</p>
+            <p class="howto__step-text">爪とチップの裏側に、グルーを均一に塗布し、塗布後1〜2分ほど乾かします。</p>
+          </div>
+
+          <div class="howto__step">
+            <span class="howto__step-num">05</span>
+            <div class="howto__step-image"></div>
+            <p class="howto__step-title">チップを爪に貼り付ける</p>
+            <p class="howto__step-text">チップを爪のキューティクル側からしっかり押しあて、5〜10秒間圧着します。</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VIDEO
+    ============================================================ -->
+    <div class="video-section">
+      <button class="video-play-btn" aria-label="動画を再生">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <polygon points="5,3 19,12 5,21"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- ============================================================
+         REVIEW
+    ============================================================ -->
+    <section class="reviews">
+      <div class="reviews__inner">
+
+        <div class="section-heading">
+          <span class="section-heading__en">Review</span>
+          <span class="section-heading__jp">レビュー</span>
+        </div>
+
+        <div class="reviews__empty">
+          <p class="reviews__empty-text">レビュー投稿はまだありません</p>
+          <a href="#" class="btn-write-review">Write</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RELATED ITEMS
+    ============================================================ -->
+    <section class="products-section">
+      <div class="products-section__inner">
+
+        <div class="section-heading">
+          <span class="section-heading__en">Related Items</span>
+          <span class="section-heading__jp">この商品を見た人はこちらの商品もチェックしています</span>
+        </div>
+
+        <div class="products-grid">
+
+          <a href="product.html" class="product-card">
+            <div class="product-card__image-wrap">
+              <button class="product-card__heart" aria-label="お気に入りに追加">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6F665B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="product-card__name">商品名が入ります。商品名が入ります。</p>
+            <p class="product-card__price">¥0,000</p>
+          </a>
+
+          <a href="product.html" class="product-card">
+            <div class="product-card__image-wrap">
+              <button class="product-card__heart" aria-label="お気に入りに追加">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6F665B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="product-card__name">商品名が入ります。商品名が入ります。</p>
+            <p class="product-card__price">¥0,000</p>
+          </a>
+
+          <a href="product.html" class="product-card">
+            <div class="product-card__image-wrap">
+              <button class="product-card__heart" aria-label="お気に入りに追加">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6F665B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="product-card__name">商品名が入ります。商品名が入ります。</p>
+            <p class="product-card__price">¥0,000</p>
+          </a>
+
+          <a href="product.html" class="product-card">
+            <div class="product-card__image-wrap">
+              <button class="product-card__heart" aria-label="お気に入りに追加">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6F665B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="product-card__name">商品名が入ります。商品名が入ります。</p>
+            <p class="product-card__price">¥0,000</p>
+          </a>
+
+        </div>
+
+        <div class="btn-view-more-wrap">
+          <a href="#" class="btn-view-more">View more</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONCEPT
+    ============================================================ -->
+    <section class="concept">
+      <div class="concept__inner">
+
+        <div class="section-heading">
+          <span class="section-heading__en">Concept</span>
+          <span class="section-heading__jp">コンセプト</span>
+        </div>
+
+        <div class="concept__main-row">
+          <div class="concept__images">
+            <div class="concept__image-main"></div>
+          </div>
+
+          <div class="concept__text-block">
+            <h2 class="concept__big-heading">Fit My Work,<br>Fit My Life.</h2>
+            <p class="concept__subtitle">爪先に、妥協しない自由を</p>
+            <p class="concept__body">仕事も、私生活も、どちらも大切にしたい。きちんとしたい日も、力を抜きたい日も、指先まで自分らしくありたいと思う。「Fit My Work, Fit My Life.」それは、働く時間にも、暮らす時間にもフィットするネイル。すべてのデザインは、現役ネイリストが手がけ特徴は、約3週間美しさが続くこと。外れにくく、日常生活でも安心して使えます。</p>
+          </div>
+        </div>
+
+        <div class="concept__sub-images">
+          <div class="concept__sub-image concept__sub-image--small"></div>
+          <div class="concept__sub-image concept__sub-image--large"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VIEWED ITEMS
+    ============================================================ -->
+    <section class="viewed-items">
+      <div class="viewed-items__inner">
+
+        <div class="section-heading">
+          <span class="section-heading__en">Viewed Items</span>
+          <span class="section-heading__jp">最近チェックしたアイテム</span>
+        </div>
+
+        <div class="products-grid">
+
+          <a href="product.html" class="product-card">
+            <div class="product-card__image-wrap">
+              <button class="product-card__heart" aria-label="お気に入りに追加">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6F665B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="product-card__name">商品名が入ります。商品名が入ります。</p>
+            <p class="product-card__price">¥0,000</p>
+          </a>
+
+          <a href="product.html" class="product-card">
+            <div class="product-card__image-wrap">
+              <button class="product-card__heart" aria-label="お気に入りに追加">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6F665B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="product-card__name">商品名が入ります。商品名が入ります。</p>
+            <p class="product-card__price">¥0,000</p>
+          </a>
+
+          <a href="product.html" class="product-card">
+            <div class="product-card__image-wrap">
+              <button class="product-card__heart" aria-label="お気に入りに追加">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6F665B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="product-card__name">商品名が入ります。商品名が入ります。</p>
+            <p class="product-card__price">¥0,000</p>
+          </a>
+
+          <a href="product.html" class="product-card">
+            <div class="product-card__image-wrap">
+              <button class="product-card__heart" aria-label="お気に入りに追加">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6F665B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="product-card__name">商品名が入ります。商品名が入ります。</p>
+            <p class="product-card__price">¥0,000</p>
+          </a>
+
+        </div>
+
+        <div class="btn-view-more-wrap">
+          <a href="#" class="btn-view-more">View more</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALLERY (Instagram)
+    ============================================================ -->
+    <section class="gallery">
+      <div class="gallery__inner">
+
+        <div class="section-heading">
+          <span class="section-heading__en">Gallery</span>
+          <span class="section-heading__jp">インスタグラム</span>
+        </div>
+
+        <div class="gallery__grid">
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+        </div>
+
+        <div class="gallery__follow">
+          <a href="#">follow us @anynail</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+
+      <div class="site-footer__top">
+        <div>
+          <p class="site-footer__shop-name">Any nail</p>
+          <div class="site-footer__shop-info">
+            <p>〒000-0000 〇〇県〇〇市〇〇町0-0-0</p>
+            <p><a href="#">Google Map</a></p>
+            <p>〇〇駅から徒歩5分</p>
+            <p>10:00〜19:00（〇曜日 休業）</p>
+          </div>
+          <a href="#" class="site-footer__follow">follow us</a>
+        </div>
+
+        <nav class="site-footer__nav-grid">
+          <div class="site-footer__nav-col">
+            <h3>Category</h3>
+            <ul>
+              <li><a href="#">ハンドネイルチップ</a></li>
+              <li><a href="#">フットネイルチップ</a></li>
+              <li><a href="#">ネイルケア用品</a></li>
+              <li><a href="#">セット商品</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__nav-col">
+            <h3>Collection</h3>
+            <ul>
+              <li><a href="#">New Arrival</a></li>
+              <li><a href="#">Occasion Nail</a></li>
+              <li><a href="#">Order Made</a></li>
+              <li><a href="#">Spring Collection</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__nav-col">
+            <h3>User Guide</h3>
+            <ul>
+              <li><a href="#">サイズの選び方</a></li>
+              <li><a href="#">付け方・外し方</a></li>
+              <li><a href="#">お手入れ方法</a></li>
+              <li><a href="#">よくある質問</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__nav-col">
+            <h3>Other</h3>
+            <ul>
+              <li><a href="#">ブランドについて</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="#">特定商取引法</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">©2026 Any Nail. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
