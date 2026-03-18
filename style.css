@@ -1291,12 +1291,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .product-images__thumbs {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
+  gap: 8px;
 }
 
 .product-images__thumb {
-  width: 92px;
-  height: 92px;
+  aspect-ratio: 1;
   background: var(--placeholder);
   border: 1px solid var(--border);
 }
