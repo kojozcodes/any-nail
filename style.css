@@ -986,7 +986,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-direction: column;
   gap: 39px;
   border-top: 0.5px solid var(--brown);
+  border-bottom: 0.5px solid var(--brown);
   padding-top: 39px;
+  padding-bottom: 39px;
 }
 
 .shop-info__row {
