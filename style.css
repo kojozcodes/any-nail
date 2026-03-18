@@ -292,8 +292,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero {
   position: relative;
   width: 100%;
-  max-width: var(--max-width);
-  margin: 0 auto;
   height: 569px;
   background: url('hero-image.png') center center / cover no-repeat;
   overflow: hidden;
@@ -301,28 +299,31 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .hero__text {
   position: absolute;
-  top: 56px;
-  left: 60px;
+  bottom: 88px;
+  left: 50px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 20px 28px;
 }
 
 .hero__en {
   font-family: var(--font-en);
-  font-size: 52px;
+  font-size: 28px;
   font-weight: 300;
+  font-style: italic;
   color: var(--black);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   line-height: 1;
   display: block;
 }
 
 .hero__jp {
   font-family: var(--font-jp);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   color: var(--black);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   display: block;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 /* ============================================================
