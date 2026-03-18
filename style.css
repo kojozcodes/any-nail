@@ -1386,7 +1386,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Add to Cart */
 .btn-add-to-cart {
+  box-sizing: border-box;
   width: 380px;
+  height: 50px;
   background: #000000;
   color: var(--white);
   font-family: var(--font-jp);
@@ -1478,25 +1480,38 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* Size Chart */
-.size-chart {
-  width: 100%;
-  border-collapse: collapse;
+.accordion--sm .accordion__label {
+  font-size: 16px;
+  color: var(--brown);
+}
+
+.size-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.size-detail__group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid var(--brown);
+}
+
+.size-detail__label {
   font-family: var(--font-jp);
-  font-size: 12px;
   font-weight: 300;
-  margin-top: 8px;
+  font-size: 14px;
+  color: #000;
 }
 
-.size-chart th,
-.size-chart td {
-  border: 1px solid var(--border);
-  padding: 8px 12px;
-  text-align: center;
-}
-
-.size-chart th {
-  background: var(--cream);
-  font-weight: 400;
+.size-detail__measurements {
+  font-family: var(--font-jp);
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 22px;
+  color: #000;
 }
 
 /* ============================================================

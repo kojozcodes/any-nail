@@ -132,7 +132,7 @@
           <button class="btn-add-to-cart">カートに追加</button>
 
           <!-- Size Detail Accordion -->
-          <div class="accordion">
+          <div class="accordion accordion--sm">
             <div class="accordion__item">
               <input type="checkbox" id="acc-size" class="accordion__input" />
               <label class="accordion__label" for="acc-size">
@@ -141,23 +141,20 @@
               </label>
               <div class="accordion__content">
                 <div class="accordion__body">
-                  <table class="size-chart">
-                    <thead>
-                      <tr>
-                        <th>サイズ</th>
-                        <th>親指</th>
-                        <th>人差し指</th>
-                        <th>中指</th>
-                        <th>薬指</th>
-                        <th>小指</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr><td>S</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td></tr>
-                      <tr><td>M</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td></tr>
-                      <tr><td>L</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td><td>00mm</td></tr>
-                    </tbody>
-                  </table>
+                  <div class="size-detail">
+                    <div class="size-detail__group">
+                      <span class="size-detail__label">-S-</span>
+                      <p class="size-detail__measurements">-親指：00mm<br>-人差し指：00mm<br>-中指：00mm<br>-薬指：00mm<br>-小指：00mm</p>
+                    </div>
+                    <div class="size-detail__group">
+                      <span class="size-detail__label">-M-</span>
+                      <p class="size-detail__measurements">-親指：00mm<br>-人差し指：00mm<br>-中指：00mm<br>-薬指：00mm<br>-小指：00mm</p>
+                    </div>
+                    <div class="size-detail__group">
+                      <span class="size-detail__label">-L-</span>
+                      <p class="size-detail__measurements">-親指：00mm<br>-人差し指：00mm<br>-中指：00mm<br>-薬指：00mm<br>-小指：00mm</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
