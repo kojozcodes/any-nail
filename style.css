@@ -51,23 +51,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--white);
   font-family: var(--font-jp);
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.06em;
   text-align: center;
   padding: 7px 0;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.announcement-bar__inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
-
-.announcement-bar__item {
-  display: inline-block;
 }
 
 /* ============================================================
@@ -299,7 +286,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .hero__text {
   position: absolute;
-  bottom: 88px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 50px;
   background: rgba(255, 255, 255, 0.72);
   padding: 20px 28px;
