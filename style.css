@@ -916,9 +916,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .information__inner {
-  max-width: var(--max-width);
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 var(--side-pad);
+  padding: 0;
 }
 
 .information__list {
