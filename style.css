@@ -314,6 +314,26 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-top: 10px;
 }
 
+.hero__indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.hero__indicator {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: var(--white);
+}
+
+.hero__indicator--active {
+  background: var(--brown);
+}
+
 /* ============================================================
    8. FEATURE SECTION
    ============================================================ */
