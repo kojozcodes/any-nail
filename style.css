@@ -1414,7 +1414,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-family: var(--font-jp);
   font-size: 13px;
   font-weight: 300;
-  color: #000000;
+  color: var(--brown);
   text-decoration: none;
 }
 
