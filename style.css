@@ -374,19 +374,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .occasion-nails {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--side-pad) 80px;
-}
-
-.occasion-nails__images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  margin-bottom: 24px;
-}
-
-.occasion-nails__image {
-  background: var(--placeholder);
-  aspect-ratio: 4 / 3;
+  padding: 40px var(--side-pad) 80px;
 }
 
 .occasion-nails__tags {
