@@ -1485,6 +1485,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--brown);
 }
 
+.accordion--sm .accordion__item {
+  border-bottom: none;
+}
+
 .size-detail {
   display: flex;
   flex-direction: column;
