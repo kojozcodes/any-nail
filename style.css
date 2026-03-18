@@ -340,6 +340,43 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ============================================================
+   8. OCCASION NAILS SECTION
+   ============================================================ */
+
+/* Occasion Nails */
+.occasion-nails {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--side-pad) 80px;
+}
+
+.occasion-nails__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-bottom: 24px;
+}
+
+.occasion-nails__image {
+  background: var(--placeholder);
+  aspect-ratio: 4 / 3;
+}
+
+.occasion-nails__tags {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.occasion-tag {
+  font-family: var(--font-jp);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--black);
+  letter-spacing: 0.06em;
+}
+
+/* ============================================================
    8. FEATURE SECTION
    ============================================================ */
 .feature {
@@ -1680,6 +1717,35 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--side-pad);
+}
+
+.product-spec {
+  border-top: 0.5px solid var(--brown);
+}
+
+.product-spec__row {
+  display: flex;
+  gap: 80px;
+  padding: 24px 0;
+  border-bottom: 0.5px solid var(--brown);
+}
+
+.product-spec__label {
+  font-family: var(--font-jp);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--black);
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.product-spec__content {
+  font-family: var(--font-jp);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--black);
+  line-height: 2;
+  letter-spacing: 0.04em;
 }
 
 /* ============================================================
