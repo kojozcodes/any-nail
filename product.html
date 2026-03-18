@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>商品名 | Any Nail - ネイルチップブランド</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -27,9 +28,13 @@
       </a>
 
       <nav class="site-header__nav">
-        <a href="#">Category</a>
+        <div class="nav-item nav-item--mega" data-mega="category">
+          <a href="#" class="nav-item__link">Category</a>
+        </div>
         <a href="#">New Arrival</a>
-        <a href="#">Collection</a>
+        <div class="nav-item nav-item--mega" data-mega="collection">
+          <a href="#" class="nav-item__link">Collection</a>
+        </div>
         <a href="#">Contact</a>
       </nav>
 
@@ -56,6 +61,39 @@
       </div>
 
     </div>
+
+    <!-- Mega Menu: Category -->
+    <div class="mega-menu" id="mega-category">
+      <div class="mega-menu__inner">
+        <div class="mega-menu__col">
+          <h4 class="mega-menu__heading">Category</h4>
+          <ul class="mega-menu__list">
+            <li><a href="#">ハンドネイルチップ</a></li>
+            <li><a href="#">フットネイルチップ</a></li>
+            <li><a href="#">オーダーメイド</a></li>
+            <li><a href="#">ケア用品</a></li>
+            <li><a href="#">セット商品</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mega Menu: Collection -->
+    <div class="mega-menu" id="mega-collection">
+      <div class="mega-menu__inner">
+        <div class="mega-menu__col">
+          <h4 class="mega-menu__heading">Collection</h4>
+          <ul class="mega-menu__list">
+            <li><a href="#">New Arrival</a></li>
+            <li><a href="#">Spring Collection</a></li>
+            <li><a href="#">Occasion Nail</a></li>
+            <li><a href="#">Office Nail</a></li>
+            <li><a href="#">Order Made</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </header>
 
   <main>
@@ -126,7 +164,7 @@
 
           <!-- Add to Cart -->
           <div class="cart-row">
-            <button class="btn-add-to-cart">カートに追加</button>
+            <a href="#" class="btn-add-to-cart">カートに追加</a>
             <button class="btn-wishlist" aria-label="お気に入りに追加">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
                 <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
@@ -697,5 +735,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Any Nail - ネイルチップブランド</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,37 +22,35 @@
   <header class="site-header">
     <div class="site-header__inner">
 
-      <!-- Logo -->
       <a href="index.html" class="site-header__logo">
         <span class="site-header__logo-en">Any nail</span>
         <span class="site-header__logo-jp">ネイルチップブランド</span>
       </a>
 
-      <!-- Nav -->
       <nav class="site-header__nav">
-        <a href="#">Category</a>
+        <div class="nav-item nav-item--mega" data-mega="category">
+          <a href="#" class="nav-item__link">Category</a>
+        </div>
         <a href="#">New Arrival</a>
-        <a href="#">Collection</a>
+        <div class="nav-item nav-item--mega" data-mega="collection">
+          <a href="#" class="nav-item__link">Collection</a>
+        </div>
         <a href="#">Contact</a>
       </nav>
 
-      <!-- Icons -->
       <div class="site-header__icons">
-        <!-- Search -->
         <a href="#" class="site-header__icon" aria-label="検索">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="7"/>
             <line x1="16.5" y1="16.5" x2="22" y2="22"/>
           </svg>
         </a>
-        <!-- Account -->
         <a href="#" class="site-header__icon" aria-label="アカウント">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="8" r="4"/>
             <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
           </svg>
         </a>
-        <!-- Cart -->
         <a href="#" class="site-header__icon" aria-label="カート">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
@@ -62,6 +61,39 @@
       </div>
 
     </div>
+
+    <!-- Mega Menu: Category -->
+    <div class="mega-menu" id="mega-category">
+      <div class="mega-menu__inner">
+        <div class="mega-menu__col">
+          <h4 class="mega-menu__heading">Category</h4>
+          <ul class="mega-menu__list">
+            <li><a href="#">ハンドネイルチップ</a></li>
+            <li><a href="#">フットネイルチップ</a></li>
+            <li><a href="#">オーダーメイド</a></li>
+            <li><a href="#">ケア用品</a></li>
+            <li><a href="#">セット商品</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mega Menu: Collection -->
+    <div class="mega-menu" id="mega-collection">
+      <div class="mega-menu__inner">
+        <div class="mega-menu__col">
+          <h4 class="mega-menu__heading">Collection</h4>
+          <ul class="mega-menu__list">
+            <li><a href="#">New Arrival</a></li>
+            <li><a href="#">Spring Collection</a></li>
+            <li><a href="#">Occasion Nail</a></li>
+            <li><a href="#">Office Nail</a></li>
+            <li><a href="#">Order Made</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </header>
 
   <main>
@@ -69,39 +101,28 @@
     <!-- ============================================================
          HERO CAROUSEL
     ============================================================ -->
-    <section class="hero" aria-label="メインビジュアル">
-
-      <input type="radio" name="hero-slide" id="hero-slide-1" class="hero__slide-input" checked />
-      <input type="radio" name="hero-slide" id="hero-slide-2" class="hero__slide-input" />
-      <input type="radio" name="hero-slide" id="hero-slide-3" class="hero__slide-input" />
-
-      <div class="hero__track">
-        <div class="hero__slide">
+    <section class="hero swiper" aria-label="メインビジュアル">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide hero__slide">
           <div class="hero__text">
             <span class="hero__en">Occasion Nail</span>
             <span class="hero__jp">フォーマルに映える、洗練された指先。</span>
           </div>
         </div>
-        <div class="hero__slide">
+        <div class="swiper-slide hero__slide">
           <div class="hero__text">
             <span class="hero__en">Occasion Nail</span>
             <span class="hero__jp">フォーマルに映える、洗練された指先。</span>
           </div>
         </div>
-        <div class="hero__slide">
+        <div class="swiper-slide hero__slide">
           <div class="hero__text">
             <span class="hero__en">Occasion Nail</span>
             <span class="hero__jp">フォーマルに映える、洗練された指先。</span>
           </div>
         </div>
       </div>
-
-      <div class="hero__indicators">
-        <label for="hero-slide-1" class="hero__indicator"></label>
-        <label for="hero-slide-2" class="hero__indicator"></label>
-        <label for="hero-slide-3" class="hero__indicator"></label>
-      </div>
-
+      <div class="swiper-pagination hero__indicators"></div>
     </section>
 
     <!-- ============================================================
@@ -419,35 +440,35 @@
 
           <a href="product.html" class="ranking-item">
             <span class="ranking-item__number">01</span>
-            <div class="ranking-item__image"></div>
+            <div class="ranking-item__image"><div class="ranking-item__image-inner"></div></div>
             <p class="ranking-item__name">商品名が入ります。商品名が入ります。</p>
             <p class="ranking-item__price">¥0,000</p>
           </a>
 
           <a href="product.html" class="ranking-item">
             <span class="ranking-item__number">02</span>
-            <div class="ranking-item__image"></div>
+            <div class="ranking-item__image"><div class="ranking-item__image-inner"></div></div>
             <p class="ranking-item__name">商品名が入ります。商品名が入ります。</p>
             <p class="ranking-item__price">¥0,000</p>
           </a>
 
           <a href="product.html" class="ranking-item">
             <span class="ranking-item__number">03</span>
-            <div class="ranking-item__image"></div>
+            <div class="ranking-item__image"><div class="ranking-item__image-inner"></div></div>
             <p class="ranking-item__name">商品名が入ります。商品名が入ります。</p>
             <p class="ranking-item__price">¥0,000</p>
           </a>
 
           <a href="product.html" class="ranking-item">
             <span class="ranking-item__number">04</span>
-            <div class="ranking-item__image"></div>
+            <div class="ranking-item__image"><div class="ranking-item__image-inner"></div></div>
             <p class="ranking-item__name">商品名が入ります。商品名が入ります。</p>
             <p class="ranking-item__price">¥0,000</p>
           </a>
 
           <a href="product.html" class="ranking-item">
             <span class="ranking-item__number">05</span>
-            <div class="ranking-item__image"></div>
+            <div class="ranking-item__image"><div class="ranking-item__image-inner"></div></div>
             <p class="ranking-item__name">商品名が入ります。商品名が入ります。</p>
             <p class="ranking-item__price">¥0,000</p>
           </a>
@@ -909,5 +930,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
