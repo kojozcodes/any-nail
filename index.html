@@ -67,18 +67,31 @@
   <main>
 
     <!-- ============================================================
-         HERO
+         HERO CAROUSEL
     ============================================================ -->
     <section class="hero" aria-label="メインビジュアル">
-      <div class="hero__text">
-        <span class="hero__en">Occasion Nail</span>
-        <span class="hero__jp">フォーマルに映える、洗練された指先。</span>
+
+      <input type="radio" name="hero-slide" id="hero-slide-1" class="hero__slide-input" checked />
+      <input type="radio" name="hero-slide" id="hero-slide-2" class="hero__slide-input" />
+      <input type="radio" name="hero-slide" id="hero-slide-3" class="hero__slide-input" />
+
+      <div class="hero__track">
+        <div class="hero__slide hero__slide--1">
+          <div class="hero__text">
+            <span class="hero__en">Occasion Nail</span>
+            <span class="hero__jp">フォーマルに映える、洗練された指先。</span>
+          </div>
+        </div>
+        <div class="hero__slide hero__slide--2"></div>
+        <div class="hero__slide hero__slide--3"></div>
       </div>
+
       <div class="hero__indicators">
-        <span class="hero__indicator hero__indicator--active"></span>
-        <span class="hero__indicator"></span>
-        <span class="hero__indicator"></span>
+        <label for="hero-slide-1" class="hero__indicator"></label>
+        <label for="hero-slide-2" class="hero__indicator"></label>
+        <label for="hero-slide-3" class="hero__indicator"></label>
       </div>
+
     </section>
 
     <!-- ============================================================
