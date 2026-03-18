@@ -300,13 +300,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero__slide {
   width: calc(100% / 3);
   height: 100%;
-  background: var(--placeholder) center / cover no-repeat;
+  background: url('hero-image.png') center / cover no-repeat;
   position: relative;
   flex-shrink: 0;
-}
-
-.hero__slide--1 {
-  background-image: url('designs/ガーディアンパートナーズ_makeshop_TOP/1.png');
 }
 
 #hero-slide-1:checked ~ .hero__track { transform: translateX(0); }
