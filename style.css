@@ -2193,6 +2193,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     height: 120px;
   }
 
+  .category-card__info {
+    right: 44px;
+  }
+
+  .category-card__en {
+    font-size: 15px;
+  }
+
   /* Concept */
   .concept__main-row {
     flex-direction: column;
