@@ -2184,8 +2184,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     padding: 60px 20px 80px;
   }
 
+  .category-row {
+    flex-wrap: wrap;
+  }
+
   .category-card {
-    height: 140px;
+    flex: 0 0 calc(50% - 5px);
+    height: 120px;
   }
 
   /* Concept */
