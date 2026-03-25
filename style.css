@@ -157,6 +157,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-self: stretch;
 }
 
+/* Hidden on desktop; mobile media query reveals it */
+.nav-item__sub {
+  display: none;
+}
+
 .nav-item__link {
   font-family: var(--font-en);
   font-size: 16px;
@@ -2116,6 +2121,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .nav-item {
     width: 100%;
     align-self: auto;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .mega-menu {
@@ -2123,16 +2130,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   }
 
   /* Mobile Category sub-menu */
-  .nav-item__sub {
-    display: none;
+  .nav-item--mega.is-open .nav-item__sub {
+    display: block;
+    width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
     background: var(--cream);
-  }
-
-  .nav-item--mega.is-open .nav-item__sub {
-    display: block;
   }
 
   .nav-item__sub li a {
@@ -2144,6 +2148,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     color: var(--black);
     border-bottom: 0.5px solid var(--border);
     letter-spacing: 0.04em;
+    text-decoration: none;
+  }
+
+  .nav-item__sub li a:hover {
+    opacity: 0.7;
   }
 
   .nav-item--mega.is-open .nav-item__chevron {
