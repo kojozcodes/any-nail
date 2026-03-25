@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const mega = document.getElementById('mega-' + trigger.dataset.mega);
     if (!mega) return;
     let timeout;
-    const open  = () => { clearTimeout(timeout); mega.classList.add('is-open'); trigger.classList.add('is-open'); };
-    const close = () => { timeout = setTimeout(() => { mega.classList.remove('is-open'); trigger.classList.remove('is-open'); }, 100); };
+    const open  = () => { if (window.innerWidth < 768) return; clearTimeout(timeout); mega.classList.add('is-open'); trigger.classList.add('is-open'); };
+    const close = () => { if (window.innerWidth < 768) return; timeout = setTimeout(() => { mega.classList.remove('is-open'); trigger.classList.remove('is-open'); }, 100); };
     trigger.addEventListener('mouseenter', open);
     trigger.addEventListener('mouseleave', close);
     mega.addEventListener('mouseenter', open);
