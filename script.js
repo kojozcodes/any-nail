@@ -33,6 +33,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ── Mobile Category sub-menu ────────────────────────────────
+  document.querySelectorAll('.nav-item--mega .nav-item__link').forEach(link => {
+    link.addEventListener('click', e => {
+      if (window.innerWidth < 768) {
+        e.preventDefault();
+        link.closest('.nav-item--mega').classList.toggle('is-open');
+      }
+    });
+  });
+
   // ── Parallax – ranking images ────────────────────────────────
   const parallaxItems = document.querySelectorAll('.ranking-item__image-inner');
   if (parallaxItems.length) {
