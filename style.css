@@ -755,9 +755,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   position: relative;
   flex: 1;
   height: 200px;
-  background: #ffffff;
+  background: #f5f3f0;
+  background-size: cover;
+  background-position: center;
   text-decoration: none;
   overflow: hidden;
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.88) 30%, rgba(255,255,255,0.05) 100%);
+  pointer-events: none;
 }
 
 .category-card--active {
@@ -808,14 +818,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border: none;
 }
 
-.category-card__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 75%;
-  height: 80%;
-  object-fit: cover;
-  pointer-events: none;
+.category-card__info,
+.category-card__arrow {
+  position: relative;
+  z-index: 1;
 }
 
 /* ============================================================
