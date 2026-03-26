@@ -812,8 +812,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   position: absolute;
   right: 0;
   bottom: 0;
+  width: 75%;
   height: 80%;
-  object-fit: contain;
+  object-fit: cover;
   pointer-events: none;
 }
 
