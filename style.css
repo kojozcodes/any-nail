@@ -102,6 +102,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-top: 2px;
 }
 
+.site-header__logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
 /* Nav */
 .site-header__nav {
   display: flex;
@@ -522,6 +528,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 48px;
 }
 
+.feature__icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
 .feature__sub {
   font-family: var(--font-jp);
   font-size: 14px;
@@ -787,6 +799,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .category-card__arrow--filled {
   background: var(--brown);
   border: none;
+}
+
+.category-card__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 80%;
+  object-fit: contain;
+  pointer-events: none;
 }
 
 /* ============================================================
@@ -1208,6 +1229,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   line-height: 1;
   margin-bottom: 24px;
   text-decoration: none;
+}
+
+.site-footer__logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
 }
 
 .site-footer__logo-en {
