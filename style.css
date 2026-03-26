@@ -106,6 +106,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 36px;
   width: auto;
   display: block;
+  object-fit: cover;
 }
 
 /* Nav */
@@ -538,7 +539,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .feature__icon img {
   width: 48px;
   height: 48px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .feature__sub {
@@ -820,7 +821,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .category-card__info,
 .category-card__arrow {
-  position: relative;
   z-index: 1;
 }
 
@@ -1265,6 +1265,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 36px;
   width: auto;
   display: block;
+  object-fit: cover;
 }
 
 .site-footer__logo-en {
