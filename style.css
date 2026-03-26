@@ -303,6 +303,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
 }
 
+.product-card__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .product-card__heart {
   position: absolute;
   top: 10px;
@@ -972,6 +979,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   width: 100%;
   aspect-ratio: 1 / 1;
   background: var(--placeholder);
+  overflow: hidden;
+}
+
+.howto__step-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .howto__step-title {
@@ -1049,6 +1064,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .gallery__item {
   aspect-ratio: 1 / 1;
   background: var(--placeholder);
+  overflow: hidden;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .gallery__follow {
