@@ -803,6 +803,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--brown);
 }
 
+.category-card__en-sub {
+  font-family: var(--font-jp);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--brown);
+  margin-left: 4px;
+}
+
 .category-card__jp {
   font-family: var(--font-jp);
   font-weight: 300;
