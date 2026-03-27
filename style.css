@@ -2262,6 +2262,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   }
 
   .hero__en { font-size: 22px; }
+  .hero__jp { font-size: 12px; }
+  .hero__sub { font-size: 11px; }
 
   .hero__indicators.swiper-pagination {
     left: 20px;
@@ -2318,25 +2320,42 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   .category-card {
     flex: 0 0 calc(50% - 5px);
-    height: 120px;
+    height: 150px;
   }
 
   .category-card__info {
-    right: 44px;
+    right: 40px;
+    bottom: 14px;
   }
 
   .category-card__en {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .category-card__en-sub {
+    font-size: 11px;
+  }
+
+  .category-card__jp {
+    font-size: 11px;
   }
 
   /* Concept */
+  .concept__inner {
+    gap: 32px;
+  }
+
   .concept__main-row {
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
   }
 
   .concept__images {
     flex: none;
+    width: 100%;
+  }
+
+  .concept__text-block {
     width: 100%;
   }
 
