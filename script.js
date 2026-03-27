@@ -43,6 +43,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ── Footer accordion (mobile) ────────────────────────────────
+  document.querySelectorAll('.site-footer__nav-col h3').forEach(heading => {
+    heading.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        heading.closest('.site-footer__nav-col').classList.toggle('is-open');
+      }
+    });
+  });
+
   // ── Parallax – ranking images ────────────────────────────────
   const parallaxItems = document.querySelectorAll('.ranking-item__image-inner');
   if (parallaxItems.length) {
