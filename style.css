@@ -408,19 +408,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 30px 50px;
 }
 
+.hero__jp {
+  font-family: var(--font-jp);
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  display: block;
+  margin-bottom: 10px;
+}
+
 .hero__en {
   font-family: var(--font-en);
   font-size: 30px;
   font-weight: 300;
   font-style: normal;
   color: #000000;
-  line-height: 1;
+  line-height: 1.2;
   display: block;
 }
 
-.hero__jp {
-  font-family: var(--font-jp);
-  font-size: 14px;
+.hero__sub {
+  font-family: var(--font-en);
+  font-size: 12px;
   font-weight: 300;
   color: #000000;
   display: block;
