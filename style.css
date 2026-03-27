@@ -402,9 +402,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   left: 49px;
   width: 470px;
   background: rgba(255, 255, 255, 0.8);
-  border-width: 0 1px 1px 0;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.8);
   padding: 30px 50px;
 }
 
