@@ -880,6 +880,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 0;
 }
 
+.concept__headline {
+  text-align: center;
+}
+
 .concept__sub-images {
   display: flex;
   align-items: flex-start;
