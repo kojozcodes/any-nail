@@ -2269,18 +2269,42 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   /* Feature */
   .feature__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .feature__item {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 24px;
+    padding: 28px 0;
     border-left: none;
-    padding: 0 16px;
+    border-right: none;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .feature__item:first-child {
+    padding-left: 0;
+  }
+
+  .feature__item:last-child {
+    border-bottom: none;
   }
 
   .feature__item:nth-child(odd) {
-    border-right: 1px solid var(--brown);
-    padding-right: 16px;
+    border-right: none;
+  }
+
+  .feature__icon {
+    flex: 0 0 90px;
+    height: 90px;
+    margin-bottom: 0;
+  }
+
+  .feature__icon img {
+    width: 90px;
+    height: 90px;
   }
 
   /* Campaign */
