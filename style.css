@@ -1161,12 +1161,20 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ============================================================
    17. SHOP INFO
    ============================================================ */
+.shop-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 96px var(--side-pad);
+}
+
 .shop-info {
   display: flex;
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
   gap: 50px;
+  width: 100%;
 }
 
 .shop-info__image {
@@ -2359,9 +2367,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   }
 
   /* Shop info */
+  .shop-info-section {
+    padding: 60px var(--side-pad);
+    gap: 48px;
+  }
+
   .shop-info {
     flex-direction: column;
-    padding: 0 var(--side-pad);
   }
 
   .shop-info__image {
